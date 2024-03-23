@@ -1,0 +1,42 @@
+.app {
+  margin: -8px;
+}
+body {
+  background-color: black;
+}
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+p {
+  color: white;
+}
+.movies {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  gap: 32px;
+}
+.movie {
+  margin: 10px;
+  text-align: center;
+}
+.movie img {
+  border-radius: 8px;
+  box-shadow: 0 0 100px 8px rgba(47, 161, 182, 0.4);
+  margin: 10px 0px;
+  &:hover {
+    transform: scale(1.03);
+    transition: transform 0.5s;
+  }
+}
+.movie h3 .movie p {
+  margin: 0;
+}
+h3 {
+  color: white;
+}
